@@ -1,0 +1,329 @@
+{% extends 'base.html' %}
+
+{% block title %} Bookstore {% endblock %}
+
+{% block css %}
+
+
+{% endblock %}
+{% block body %}
+      {% load static %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message : </strong> {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div> 
+ {% endfor %}
+
+
+ <link rel="stylesheet" href=" ../static\css\about.css ">
+		
+  <link rel="icon" type="image/icon.png" href=" ">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="about.css">
+  
+  <script type="text/javascript" src="logic.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <div data-aos="zoom-out-up" class="tagline">
+    <h1><span class="splwrd">
+      The CoZY LiBraRy
+    </span> is accelerating<br>
+    businesses since 2009</h1>
+    <br>
+    <p>Since 2009, we’ve successfully delivered over 2000 apps,<br>
+    digital products and connected experiences that solve real problems</p>
+    <br>
+  
+  </div>
+  <!-- Tagline ends -->
+  <!-- 2 CARDS -->
+  <div class="cards2">
+    <div class="row">
+      <div class="col-md-6 card21"><h1>How we achieved all this? </h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p></div>
+      <div class="col-md-6 card22"><h1>How we achieved all this? </h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p></div>
+    </div>
+  </div>
+  <!-- 2 CARDS END -->
+  <!-- MORE DETAILS -->
+  <div class="moredetail">
+    <div class="row rw1">
+      <div class="col-md-4 bg who"><h1>Who we are?</div>
+      <div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</div>
+    </div>
+    <div class="row rw1">
+      <div class="col-md-4  who"><h1>Who we are?</div>
+      <div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</div>
+    </div>
+  </div>
+  <!-- 3 CARDS IMPACT -->
+  <div class="crd3">
+    <div class="row rw2">
+      <div class="col-md-4 cardimp"><span class="number">01</span>
+      <span><h2>Mobile app</h2></span>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      </span></div>
+      <div class="col-md-4 cardimp"><span class="number">02</span>
+      <span><h2>Mobile app</h2></span>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      </span></div>
+      <div class="col-md-4 cardimp"><span class="number">03</span>
+      <span><h2>Mobile app</h2></span>
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      </span></div>
+    </div>
+  </div>
+  <!-- 3 CARDS IMPACT END -->
+  <!-- NUMBERS -->
+  <div class="numdiv">
+    <div class="numcontainer">
+      <span class="contentnum"><h1>1000+</h1><p>Projects Completed</p></span>
+      <span class="contentnum"><h1>100+</h1><p>Tech Experts on board</p></span>
+      <span class="contentnum"><h1>$9800+</h1><p>Donated in charity</p></span>
+    </div>
+  </div>
+  <!-- NUMBERS END -->
+  <!-- PROJECTS -->
+  <div class="tagpro" id="tagpro">
+    <div class="tagprocont">
+      <h1>Lorem Ipsum</h1>
+      <p>Some of the rare Reviews we got from our Happy Customers. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+    </div>
+  </div>
+  <!-- PROJECTS TAGLINE END -->
+  <!-- GRID -->
+  <div class="gridder">
+    <div class="grid">
+      <div class="gridcrd"><h4>MESSERS.COM</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+      <div class="gridcrd"><h4>MESSERS.COM</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+      <div class="gridcrd"><h4>MESSERS.COM</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+      <div class="gridcrd"><h4>MESSERS.COM</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+      <div class="gridcrd"><h4>MESSERS.COM</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+      <div class="gridcrd"><h4>MESSERS.COM</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+    </div>
+  </div>
+  <!-- GRID END -->
+  <div class="carousel-container">
+    <div class="carousel-box">
+      <div class="carousel">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/12/13/18/00/autumn-7653897__340.jpg"
+          alt="Foto-1" />
+        <div class="testimonial">
+          <p class="testimonial-text">
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+            nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit
+            quo sunt hic illo fugit."
+          </p>
+          <p class="testimonial-author">Maria de Almeida</p>
+          <p class="testimonial-job">
+            Senior Product Manager at EDP Comercial
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-box">
+      <div class="carousel">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/11/29/11/31/robin-7624340__340.jpg"
+          alt="foto-2" />
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Distinctio natus velit sequi magni, a dolore,
+          </p>
+          <p class="testimonial-author">John Martines</p>
+          <p class="testimonial-job">
+            Junior Product Manager at EDP Comercial
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-box">
+      <div class="carousel">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/12/14/12/40/grass-7655335__340.jpg"
+          alt="Foto-3" />
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem facere labore et assumenda tempora! Officiis
+          </p>
+          <p class="testimonial-author">Johan Maritta</p>
+          <p class="testimonial-job">Product Manager at EDP Comercial</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="button btn--left" onclick="plusSlides(-1)">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="btn-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <button class="button btn--right" onclick="plusSlides(1)">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="btn-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <div class="dots">
+      <span class="dot dot--fill" onclick="currentSlide(1)"></span>
+      <span class="dot dot--fill" onclick="currentSlide(2)"></span>
+      <span class="dot dot--fill" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+    $(function() {
+    AOS.init();
+    AOS.init({
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 300, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 450, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    });
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+    }
+    function toggleMobileMen(list) {
+    list.classList.toggle('show');
+    }
+    $(document).ready(function(){
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('#scroll').fadeIn();
+    } else {
+    $('#scroll').fadeOut();
+    }
+    });
+    $('#scroll').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+    });
+
+
+
+
+
+    $(document).ready(function(){
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+    $('#mobaff').fadeIn();
+    } else {
+    $('#mobaff').fadeOut();
+    }
+    });
+  
+    });
+
+
+    var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+SlideShow((slidePosition += n));
+}
+
+//  images controls
+function currentSlide(n) {
+SlideShow((slidePosition = n));
+}
+
+function SlideShow(n) {
+var i;
+var slides = document.getElementsByClassName("carousel-box");
+var circles = document.getElementsByClassName("dot");
+if (n > slides.length) {
+  slidePosition = 1;
+}
+if (n < 1) {
+  slidePosition = slides.length;
+}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < circles.length; i++) {
+  circles[i].className = circles[i].className.replace(" dot--fill", "");
+}
+slides[slidePosition - 1].style.display = "block";
+circles[slidePosition - 1].className += " dot--fill";
+}
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+{% endblock %}  
+{% block js %}
+<script>
+    {% if thank %}
+  alert('Logout Successful.');
+  localStorage.clear();
+  document.location = '/';
+  {% endif %}
+</script>   
+{% endblock %}
